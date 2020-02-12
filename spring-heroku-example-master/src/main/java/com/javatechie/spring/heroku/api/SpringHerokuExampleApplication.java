@@ -7,20 +7,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-@RestController
-public class SpringHerokuExampleApplication {
-
-	@GetMapping("/")
-	public String sayHi() {
-		return "Welcome to Heroku Cloud solution";
-	}
-
-	@GetMapping("/message/{input}")
-	public String getMessage(@PathVariable String input) {
-		return "Welcome " + input;
-	}
-
+ class SpringHerokuExampleApplication {
 	public static void main(String[] args) {
+		poji poji=new poji("abhinav","gupta");
 		SpringApplication.run(SpringHerokuExampleApplication.class, args);
 	}
 }
